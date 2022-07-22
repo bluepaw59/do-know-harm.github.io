@@ -11,11 +11,13 @@ layout: default
     {% include menu.html %}
     {% if site.title %}
       <h1>
-        {{ site.title }}
+        <img src="/assets/images/transparent_logo.png" width="20%">
+        <img src="/assets/images/title.png" >
       </h1>
     {% endif %}
     {% if site.title %}
-      <h2>
+      <h2, style="font-size:1.5em">
+        <br/>
         {{ site.description }}
       </h2>
     {% endif %}
@@ -24,38 +26,7 @@ layout: default
 
 <main class="home" id="main" role="main" aria-label="Content">
 
-  <h1 class="content-title divided">
-    {% if site.paginate and site.paginate_path and paginator.page > 1 %}
-      Page {{ paginator.page }}
-    {% else %}
-      News Articles
-    {% endif %}
-  </h1>
-
-  <!-- <a href="{{ post.url | absolute_url }}" class="post-link"></a> -->
-
-  <!-- {% if site.paginate and site.paginate_path %} -->
-    
-    <ul class="news-list">
-      {% for item in site.news %}
-        <a href="{{ item.url | absolute_url }}" class="post-link">
-          <div class="post-link__heading">
-
-              <h1 class="post-link__title">      
-                {{ item.title }}
-              </h1>
-
-          </div>
-          <span class="post-date">
-            {{ item.date | date: "%b %-d, '%y" }}
-          </span>
-      </a>
-        <!-- <h2> hi </h2> -->
-        <!-- <h2>{{ item.title }}</h2>
-        <p>{{ item.description }}</p>
-        <p><a href="{{ item.url }}">{{ item.title }}</a></p> -->
-      {% endfor %}
-    </ul>
+  
 
     <h1 class="content-title divided">
       {% if site.paginate and site.paginate_path and paginator.page > 1 %}
@@ -85,6 +56,38 @@ layout: default
       {% endfor %}
     </ul>
 
+    <h1 class="content-title divided">
+      {% if site.paginate and site.paginate_path and paginator.page > 1 %}
+        Page {{ paginator.page }}
+      {% else %}
+        News Articles
+      {% endif %}
+    </h1>
+  
+    <!-- <a href="{{ post.url | absolute_url }}" class="post-link"></a> -->
+  
+    <!-- {% if site.paginate and site.paginate_path %} -->
+      
+      <ul class="news-list">
+        {% for item in site.news %}
+          <a href="{{ item.url | absolute_url }}" class="post-link">
+            <div class="post-link__heading">
+  
+                <h1 class="post-link__title">      
+                  {{ item.title }}
+                </h1>
+  
+            </div>
+            <span class="post-date">
+              {{ item.date | date: "%b %-d, '%y" }}
+            </span>
+        </a>
+          <!-- <h2> hi </h2> -->
+          <!-- <h2>{{ item.title }}</h2>
+          <p>{{ item.description }}</p>
+          <p><a href="{{ item.url }}">{{ item.title }}</a></p> -->
+        {% endfor %}
+      </ul>
 
     <!-- <ul class="news-list">
       {% for news in site.news %}
