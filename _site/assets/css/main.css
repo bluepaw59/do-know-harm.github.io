@@ -950,7 +950,7 @@ figcaption {
 .sidebar {
     left: 5%;
     padding: 0;
-    width: 200px;
+    width: 25%;
     /* background-color: #f1f1f1; */
     position: fixed;
     top: 20%;
@@ -984,7 +984,7 @@ figcaption {
 .sidebarr {
     right: 5%;
     padding: 0;
-    width: 200px;
+    width: 25%;
     /* background-color: #f1f1f1; */
     position: fixed;
     top: 20%;
