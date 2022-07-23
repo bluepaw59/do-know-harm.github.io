@@ -942,78 +942,87 @@ figcaption {
 
 /*# sourceMappingURL=main.css.map */
 
-/* .sidebar {
-    display: none
-} */
-
-/* @media only screen and (min-width: 1200px){ */
-.sidebar {
-    left: 5%;
-    padding: 0;
-    width: 20%;
-    /* background-color: #f1f1f1; */
-    position: fixed;
-    top: 20%;
-    height: 100%;
-    overflow: auto;
-    text-align: center
-}
-
-/* Sidebar links */
-.sidebar a {
-    display: block;
-    color: black;
-    padding: 16px;
-    text-decoration: none;
-    height: 100%
+@media all and (max-width: 800px) {
+    .sidebar {
+        display: none
+    }
     
+    .sidebarr {
+        display: none
+    }
 }
 
-/* Active/current link */
-.sidebar a.active {
-    /* background-color: #04AA6D; */
-    color: white;
+
+@media only screen and (min-width: 800px){
+    .sidebar {
+        left: 5%;
+        padding: 0;
+        width: 20%;
+        /* background-color: #f1f1f1; */
+        position: fixed;
+        top: 20%;
+        height: 100%;
+        overflow: auto;
+        text-align: center
+    }
+
+    /* Sidebar links */
+    .sidebar a {
+        display: block;
+        color: black;
+        padding: 16px;
+        text-decoration: none;
+        height: 100%
+        
+    }
+
+    /* Active/current link */
+    .sidebar a.active {
+        /* background-color: #04AA6D; */
+        color: white;
+    }
+
+    /* Links on mouse-over */
+    .sidebar a:hover:not(.active) {
+        /* background-color: #555; */
+        opacity: .6
+    }
+
+    .sidebarr {
+        right: 5%;
+        padding: 0;
+        width: 20%;
+        /* background-color: #f1f1f1; */
+        position: fixed;
+        top: 20%;
+        height: 100%;
+        overflow: auto;
+        text-align: center
+    }
+
+    /* Sidebar links */
+    .sidebarr a {
+        display: block;
+        color: black;
+        padding: 16px;
+        text-decoration: none;
+        height: 100%
+        
+    }
+
+    /* Active/current link */
+    .sidebarr a.active {
+        /* background-color: #04AA6D; */
+        color: white;
+    }
+
+    /* Links on mouse-over */
+    .sidebarr a:hover:not(.active) {
+        /* background-color: #555; */
+        opacity: .6
+    }
 }
 
-/* Links on mouse-over */
-.sidebar a:hover:not(.active) {
-    /* background-color: #555; */
-    opacity: .6
-}
-
-.sidebarr {
-    right: 5%;
-    padding: 0;
-    width: 20%;
-    /* background-color: #f1f1f1; */
-    position: fixed;
-    top: 20%;
-    height: 100%;
-    overflow: auto;
-    text-align: center
-}
-
-/* Sidebar links */
-.sidebarr a {
-    display: block;
-    color: black;
-    padding: 16px;
-    text-decoration: none;
-    height: 100%
-    
-}
-
-/* Active/current link */
-.sidebarr a.active {
-    /* background-color: #04AA6D; */
-    color: white;
-}
-
-/* Links on mouse-over */
-.sidebarr a:hover:not(.active) {
-    /* background-color: #555; */
-    opacity: .6
-}
 /* } */
 
   /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
