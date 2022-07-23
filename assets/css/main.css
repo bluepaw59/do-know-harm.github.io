@@ -946,7 +946,7 @@ figcaption {
     margin: 0;
     padding: 0;
     width: 200px;
-    background-color: #f1f1f1;
+    /* background-color: #f1f1f1; */
     position: fixed;
     height: 100%;
     overflow: auto;
@@ -958,18 +958,19 @@ figcaption {
     color: black;
     padding: 16px;
     text-decoration: none;
+    height: 100%
   }
   
   /* Active/current link */
   .sidebar a.active {
-    background-color: #04AA6D;
+    /* background-color: #04AA6D; */
     color: white;
   }
   
   /* Links on mouse-over */
   .sidebar a:hover:not(.active) {
-    background-color: #555;
-    color: white;
+    /* background-color: #555; */
+    opacity: .6
   }
   
   /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
