@@ -19,7 +19,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   a visual novel crossed with combat medicine
 # baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://do-know-harm.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-icon: /assets/images/icon-512.png
+icon: /assets/images/site_icon.png
 twitter_username: patdryburgh
 github_username:  Do-Know-Harm
 
