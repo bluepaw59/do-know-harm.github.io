@@ -943,38 +943,79 @@ figcaption {
 /*# sourceMappingURL=main.css.map */
 
 .sidebar {
-    margin: 0;
-    padding: 0;
-    width: 200px;
-    /* background-color: #f1f1f1; */
-    position: fixed;
-    top: 20%;
-    height: 100%;
-    overflow: auto;
-  }
-  
-  /* Sidebar links */
-  .sidebar a {
-    display: block;
-    color: black;
-    padding: 16px;
-    text-decoration: none;
-    height: 100%
+    display: none
+}
+
+@media only screen and (min-width: 1200px){
+    .sidebar {
+        margin-left: 5%;
+        padding: 0;
+        width: 200px;
+        /* background-color: #f1f1f1; */
+        position: fixed;
+        top: 20%;
+        height: 100%;
+        overflow: auto;
+        text-align: center
+    }
     
-  }
-  
-  /* Active/current link */
-  .sidebar a.active {
-    /* background-color: #04AA6D; */
-    color: white;
-  }
-  
-  /* Links on mouse-over */
-  .sidebar a:hover:not(.active) {
-    /* background-color: #555; */
-    opacity: .6
-  }
-  
+    /* Sidebar links */
+    .sidebar a {
+        display: block;
+        color: black;
+        padding: 16px;
+        text-decoration: none;
+        height: 100%
+        
+    }
+    
+    /* Active/current link */
+    .sidebar a.active {
+        /* background-color: #04AA6D; */
+        color: white;
+    }
+    
+    /* Links on mouse-over */
+    .sidebar a:hover:not(.active) {
+        /* background-color: #555; */
+        opacity: .6
+    }
+
+    .sidebarr {
+        margin-right: 5%;
+        padding: 0;
+        width: 200px;
+        /* background-color: #f1f1f1; */
+        position: fixed;
+        top: 20%;
+        height: 100%;
+        overflow: auto;
+        text-align: center
+    }
+    
+    /* Sidebar links */
+    .sidebarr a {
+        display: block;
+        color: black;
+        padding: 16px;
+        text-decoration: none;
+        height: 100%
+        
+    }
+    
+    /* Active/current link */
+    .sidebarr a.active {
+        /* background-color: #04AA6D; */
+        color: white;
+    }
+    
+    /* Links on mouse-over */
+    .sidebarr a:hover:not(.active) {
+        /* background-color: #555; */
+        opacity: .6
+    }
+}
+
   /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
   div.content {
     margin-left: 200px;
