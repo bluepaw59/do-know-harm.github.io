@@ -638,27 +638,27 @@ figcaption {
 .site-masthead h1 {
     font-size: 3em;
     margin-bottom: 0;
-    margin-top: 1em;
-    padding: 0 2rem;
+    /* margin-top: 1em; */
+    /* padding: 0 2rem; */
 }
 
 @media (min-width: 768px) {
-    .site-masthead h1 {
+    /* .site-masthead h1 {
         font-size: 6em;
-    }
+    } */
 }
 
 .site-masthead h2 {
     color: black;
     font-size: 1.25em;
     margin: 0;
-    padding: 0 2rem;
+    /* padding: 0 2rem; */
 }
 
 @media (min-width: 768px) {
-    .site-masthead h2 {
+    /* .site-masthead h2 {
         font-size: 3em;
-    }
+    } */
 }
 
 .site-navigation {
