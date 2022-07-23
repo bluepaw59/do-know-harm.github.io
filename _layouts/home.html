@@ -7,6 +7,10 @@ layout: default
 {% elsif site.paginate and site.paginate_path and paginator.page > 1 %}
   {% include back-link.html %}
 {% else %}
+
+
+
+
   <header class="site-masthead">
     {% include menu.html %}
     {% if site.title %}
@@ -14,7 +18,9 @@ layout: default
         
        
         <!-- <img src="/assets/images/title.png" > -->
-        <img src="/assets/images/transparent_logo.png" width="20%">
+        <img id="img" src="/assets/images/logo1.png" width="20%">
+        </video>
+        <!-- <br/> -->
         Do Know Harm
       </h1>
     {% endif %}
@@ -27,7 +33,18 @@ layout: default
   </header>
 {% endif %}
 
-<main class="home" id="main" role="main" aria-label="Content">
+<div class="sidebar">
+  hello i am a sidebar
+</div>
+
+<div class="sidebarr">
+  hello i am a sidebar
+  <!-- <image src="/assets/images/hannah.png" width="100%">
+  <image src="assets/images/divider.svg" width="100%">
+  hannah :D -->
+</div>
+
+<main class="home" id="main" role="main" aria-label="Content" >
 
   
 
