@@ -776,7 +776,11 @@ figcaption {
 }
 
 .post {
-    background: #383634;
+    background-image: url("https://do-know-harm.github.io/assets/images/post_bg.png");
+    /* background-color: #91837A; */
+    /* background-repeat: round; */
+    background-size: cover;
+    background-color: #383634;
     color: #ded8d3;
     margin: 2em auto;
     max-width: 60rem;
