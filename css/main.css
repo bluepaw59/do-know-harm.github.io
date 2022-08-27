@@ -554,7 +554,7 @@ img {
     display: flex;
     max-width: 100%;
     height: auto;
-    margin: 0.5em auto;
+    /* margin: 0.5em auto; */
 }
 
 figure img {
@@ -939,6 +939,46 @@ figcaption {
     }
 }
 
+.container {
+    vertical-align: top;
+    position: relative;
+    text-align: center;
+    /* color: white; */
+    padding-top:0;
+    padding-bottom:0;
+    margin-top:0;
+    margin-bottom:0;
+    width: 100%;
+    height: 56.25%;
+}
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #91837A;
+    opacity: 80%;
+    width:100%;
+    padding-top:2%;
+    padding-bottom:2%;
+}
+
+.blank {
+    margin-top: 200px;
+}
+
+.streetcar {
+    padding: 0;
+    width: 100%;
+    /* height: 100%; */
+    position: relative;
+    background-image: url("https://cdn.discordapp.com/attachments/667908923226849288/1013220367281688607/streetcar.png");
+    background-size: contain;
+    /* height: 0; */
+    margin-top: 200px;
+    padding-top: 56.25%; 
+}
+
 
 @media only screen and (min-width: 800px){
     .sidebar {
@@ -1015,8 +1055,8 @@ figcaption {
   /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
   div.content {
     margin-left: 200px;
-    padding: 1px 16px;
-    height: 1000px;
+    /* padding: 1px 16px; */
+    /* height: 1000px; */
   }
   
   /* On screens that are less than 700px wide, make the sidebar into a topbar */
