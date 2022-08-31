@@ -817,6 +817,7 @@ figcaption {
 .post p {
     font-size: 0.8em;
     text-align: center;
+    font-family: "Vollkorn"; 
     /* text-indent: 1.5em; */
     /* text-justify: inter-word; */
 }
