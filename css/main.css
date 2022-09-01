@@ -1,14 +1,6 @@
-@import url(http://db.onlinewebfonts.com/c/8fb2543b6cd6518235f0ad3d92026e26?family=Journal-Ultra);
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn');
 
-@font-face {font-family: "Journal-Ultra";
-    src: url("http://db.onlinewebfonts.com/t/8fb2543b6cd6518235f0ad3d92026e26.eot"); /* IE9*/
-    src: url("http://db.onlinewebfonts.com/t/8fb2543b6cd6518235f0ad3d92026e26.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-    url("http://db.onlinewebfonts.com/t/8fb2543b6cd6518235f0ad3d92026e26.woff2") format("woff2"), /* chrome firefox */
-    url("http://db.onlinewebfonts.com/t/8fb2543b6cd6518235f0ad3d92026e26.woff") format("woff"), /* chrome firefox */
-    url("http://db.onlinewebfonts.com/t/8fb2543b6cd6518235f0ad3d92026e26.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/
-    url("http://db.onlinewebfonts.com/t/8fb2543b6cd6518235f0ad3d92026e26.svg#Journal-Ultra") format("svg"); /* iOS 4.1- */
-}
-
+/* CSS reset */
 html,
 body,
 div,
@@ -112,6 +104,10 @@ q:after {
     content: none;
 }
 
+body {
+    font-family: 'Vollkorn';
+}
+
 ins {
     background-color: #ff9;
     color: #000;
@@ -181,13 +177,11 @@ select {
 /** Syntax highlighting styles */
 code.highlighter-rouge {
     background: #e3dfdd;
-    font-family: "Journal-Ultra";
     font-size: .875em;
 }
 
 .highlight {
     background: #fff;
-    font-family: "Journal-Ultra";
     font-size: .875em;
     margin: 2rem auto;
 }
@@ -451,17 +445,6 @@ code.highlighter-rouge {
     color: #099;
 }
 
-/* eb-garamond-regular - latin */
-/* @font-face {
-    font-family: 'Journal-Ultra';
-    font-style: normal;
-    font-weight: 400;
-    font-display: auto;
-    src: url("http://db.onlinewebfonts.com/c/8fb2543b6cd6518235f0ad3d92026e26?family=Journal-Ultra");
-    src: local("EB Garamond Regular"), local("EBGaramond-Regular"), url("http://localhost:4000/assets/fonts/eb-garamond-v9-latin-regular.eot?#iefix") format("embedded-opentype"), url("http://localhost:4000/assets/fonts/eb-garamond-v9-latin-regular.woff2") format("woff2"), url("http://localhost:4000/assets/fonts/eb-garamond-v9-latin-regular.woff") format("woff"), url("http://localhost:4000/assets/fonts/eb-garamond-v9-latin-regular.ttf") format("truetype"), url("http://localhost:4000/assets/fonts/eb-garamond-v9-latin-regular.svg#EBGaramond") format("svg");
-} */
-
-
 body {
     background-image: url("https://do-know-harm.github.io/images/bg.png");
     background-color: #91837A;
@@ -469,7 +452,6 @@ body {
     background-size: repeat;
     background-repeat: repeat;
     /* color: #0b0404; */
-    font-family: "Journal-Ultra";
     font-size: 1.3125em;
     line-height: 1.5;
 }
@@ -817,7 +799,6 @@ figcaption {
 .post p {
     font-size: 0.8em;
     text-align: center;
-    font-family: "Vollkorn"; 
     /* text-indent: 1.5em; */
     /* text-justify: inter-word; */
 }
