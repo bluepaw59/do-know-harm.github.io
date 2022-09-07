@@ -136,6 +136,10 @@ table {
     border-spacing: 0;
 }
 
+header {
+    position: fixed;
+}
+
 .post hr {
     display: block;
     /* align-self: center; */
@@ -934,6 +938,19 @@ figcaption {
     }
 }
 
+.container2 {
+    vertical-align: top;
+    position: relative;
+    text-align: center;
+    /* color: white; */
+    padding-top:0;
+    padding-bottom:0;
+    margin-top:0;
+    margin-bottom:0;
+    width: 100%;
+    height: 100%;
+}
+
 .container {
     vertical-align: top;
     position: relative;
@@ -945,6 +962,17 @@ figcaption {
     margin-bottom:0;
     width: 100%;
     height: 56.25%;
+}
+.centered2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -75%);
+    /* background-color: #91837A; */
+    /* opacity: 80%; */
+    width:100%;
+    padding-top:2%;
+    padding-bottom:2%;
 }
 .centered {
     position: absolute;
@@ -980,18 +1008,31 @@ figcaption {
     padding-top: 56.25%; 
 }
 
+.fade-in-image { 
+    animation: fadeIn 5s; 
+    /* padding-top: -10%; */
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
 
 @media only screen and (min-width: 800px){
     .sidebar {
-        left: 5%;
-        padding: 0;
+        left: 0%;
+        /* top:20%; */
+        padding-top: 10%;
+        /* padding: 0; */
         width: 20%;
         /* background-color: #f1f1f1; */
-        position: fixed;
+        position: absolute;
         top: 20%;
         height: 100%;
         overflow: auto;
-        text-align: center
+        text-align: center;
+        padding-bottom: 0%
     }
 
     /* Sidebar links */
@@ -1017,14 +1058,16 @@ figcaption {
     }
 
     .sidebarr {
-        right: 5%;
-        padding: 0;
+        right: 0%;
+        /* top:20%; */
+        /* padding: 0; */
+        padding-top: 10%;
         width: 20%;
         /* background-color: #f1f1f1; */
-        position: fixed;
+        position: absolute;
         top: 20%;
         height: 100%;
-        overflow: auto;
+        /* overflow: auto; */
         text-align: center
     }
 
