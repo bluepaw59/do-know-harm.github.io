@@ -33,7 +33,7 @@
 
 
         <div class="container2">
-            <div id='filling' style='display:none'>
+            <div id='filling' style='display:block'>
             </div>
             <div class="fade-in-image">
                 <div id="cover" style="position:fixed">
@@ -70,7 +70,7 @@
             <div class="centered">did you KNOW that "Do Know Harm" is really a terrible pun on "Do No Harm" :D!</div>           
         </div>
         <div class="colorline"></div>
-        <div class="container">
+        <div class="container" id="two">
             <img src="images/marketplace.png" alt="marketplace" style="width:100%;">
             <div class="centered">man who should we ship eric with? ""the water""</div>
         </div>
@@ -116,10 +116,12 @@ window.addEventListener('scroll', () => {
     one.style.opacity = 1 - ( scrollY / bottomHeight )
     cover.style.position = 'fixed'
     filling.style.display = 'none'
+    two.style.display = 'fixed'
   }
   else{
     cover.style.position = null
     filling.style.display = 'block'
+    two.style.display = 'block'
   }
 })
 
@@ -152,7 +154,7 @@ function myFunction() {
   height: 100vh;
 }
 #filling{
-  height:100vh;
+  height:100%;
   width:100%
 }
 #cover{
