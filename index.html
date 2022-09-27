@@ -38,7 +38,7 @@
             <div class="fade-in-image">
                 <div id="cover" style="position:fixed">
                 <div id="one">
-                <img src="images/bg.png" style="position:realtive;top:0;left:0;width:100%;height:100vh;">
+                <img src="images/bg.png" style="position:realtive;top:0;left:0;width:100%;height:100vh;" id="bg-cover">
                 <img src="images/both_sketch-01.png" id="one" alt="hannah and eric" style="width:100%;position:absolute;top:0px;left:0px;">
                 
                 <div class="centered2">
@@ -107,6 +107,7 @@ const one = document.getElementById('one')
 const two = document.getElementById('two')
 const cover = document.getElementById('cover')
 const filling = document.getElementById('filling')
+const bgCover = document.getElementById('bg-cover')
 
 window.addEventListener('scroll', () => {
   let scrollY = window.scrollY
@@ -114,6 +115,7 @@ window.addEventListener('scroll', () => {
   
   if(scrollY / bottomHeight <= 1){
     one.style.opacity = 1 - ( scrollY / bottomHeight )
+    bgCover.opacity = scrollY/bottomHeight >= 1 ? 1.1 - ( scrollY / bottomHeight ) : 1;
     cover.style.position = 'fixed'
     filling.style.display = 'none'
     two.style.display = 'fixed'
