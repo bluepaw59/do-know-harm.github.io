@@ -33,7 +33,7 @@
 
         <div id='filling' style='display:none'>
         </div>
-        
+
         <div class="container2">
             <div class="fade-in-image">
                 <div id="cover" style="position:fixed">
@@ -104,6 +104,7 @@
 
 <script>
 const one = document.getElementById('one')
+const two = document.getElementById('two')
 const cover = document.getElementById('cover')
 const filling = document.getElementById('filling')
 
@@ -114,11 +115,13 @@ window.addEventListener('scroll', () => {
   if(scrollY / bottomHeight <= 1){
     one.style.opacity = 1 - ( scrollY / bottomHeight )
     cover.style.position = 'fixed'
+    two.style.position = 'fixed'
     filling.style.display = 'none'
   }
   else{
     cover.style.position = null
     filling.style.display = 'block'
+    two.style.position = 'absolute'
   }
 })
 
