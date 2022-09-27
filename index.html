@@ -63,9 +63,10 @@
         <!-- <div class="blank"></div> -->
         <div class="container">
             <div id="two">
+                <img src="images/bg.png" alt="bg" style="width:100%;height:100vh;">
+            </div>           
             <img src="images/streetcar.png" alt="streetcar" style="width:100%;">
-            <div class="centered">did you KNOW that "Do Know Harm" is really a terrible pun on "Do No Harm" :D!</div>
-            </div>
+            <div class="centered">did you KNOW that "Do Know Harm" is really a terrible pun on "Do No Harm" :D!</div>           
         </div>
         <div class="colorline"></div>
         <div class="container">
@@ -119,6 +120,19 @@ window.addEventListener('scroll', () => {
     filling.style.display = 'block'
   }
 })
+
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
 </script>
 
 
@@ -155,6 +169,11 @@ window.addEventListener('scroll', () => {
 }
 #two{
   z-index:1;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 
