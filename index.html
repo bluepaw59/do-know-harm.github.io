@@ -115,13 +115,11 @@ window.addEventListener('scroll', () => {
   if(scrollY / bottomHeight <= 1){
     one.style.opacity = 1 - ( scrollY / bottomHeight )
     cover.style.position = 'fixed'
-    two.style.position = 'fixed'
     filling.style.display = 'none'
   }
   else{
     cover.style.position = null
     filling.style.display = 'block'
-    two.style.position = 'absolute'
   }
 })
 
