@@ -33,7 +33,7 @@
 
 
         <div class="container2">
-            <div id='filling' style='display:block'>
+            
             </div>
             <div class="fade-in-image">
                 <div id="cover" style="position:fixed">
@@ -66,6 +66,9 @@
         
         
         <!-- <div class="blank"></div> -->
+        <div class="container">
+            <div id='filling' style='display:block'>
+        </div>
         <div class="container" id="two">         
             <img src="images/streetcar.png" alt="streetcar" style="width:100%;">
             <div class="centered">did you KNOW that "Do Know Harm" is really a terrible pun on "Do No Harm" :D!</div>           
@@ -117,12 +120,12 @@ window.addEventListener('scroll', () => {
     one.style.opacity = 1 - ( scrollY / bottomHeight )
     cover.style.position = 'fixed'
     filling.style.display = 'none'
-    two.style.display = 'fixed'
+    //two.style.display = 'fixed'
   }
   else{
     cover.style.position = null
     filling.style.display = 'block'
-    two.style.display = 'block'
+    //two.style.display = 'block'
   }
 })
 
