@@ -33,7 +33,8 @@
 
         <div class="container2">
             <div class="fade-in-image">
-                
+                <div id="cover" style="position:fixed">
+                <div id="one">
                 <img src="images/both_sketch-01.png" alt="hannah and eric" style="width:100%;">
                 
                 <div class="centered2">
@@ -50,7 +51,8 @@
                     </center>
                     <br/>
                     <h2>a visual novel crossed with combat medicine</h2>
-                    
+                </div>    
+                </div>
                 </div>
             </div>
 
@@ -60,8 +62,10 @@
         
         <!-- <div class="blank"></div> -->
         <div class="container">
+            <div id="two">
             <img src="images/streetcar.png" alt="streetcar" style="width:100%;">
             <div class="centered">did you KNOW that "Do Know Harm" is really a terrible pun on "Do No Harm" :D!</div>
+            </div>
         </div>
         <div class="colorline"></div>
         <div class="container">
@@ -95,3 +99,60 @@
         </div>
     </body>
 </html>
+
+<script>
+const one = document.getElementById('one')
+const cover = document.getElementById('cover')
+const filling = document.getElementById('filling')
+
+window.addEventListener('scroll', () => {
+  let scrollY = window.scrollY
+  let bottomHeight = window.innerHeight
+  
+  if(scrollY / bottomHeight <= 1){
+    one.style.opacity = 1 - ( scrollY / bottomHeight )
+    cover.style.position = 'fixed'
+    filling.style.display = 'none'
+  }
+  else{
+    cover.style.position = null
+    filling.style.display = 'block'
+  }
+})
+</script>
+
+
+
+<style scoped>
+
+/* *{padding:0;margin:0;border-size: border-box} */
+
+body{
+  height: 3500px;
+}
+img {
+  width: 100%;
+  height: 100vh;
+}
+#filling{
+  height:100vh;
+  width:100%
+}
+#cover{
+  height:100vh;
+  width:100%;
+}
+#cover > div{
+  height:100vh;
+  width:100%;
+  position:absolute;
+}
+#one{
+  z-index:2;
+}
+#two{
+  z-index:1;
+}
+
+
+</style>
