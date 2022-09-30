@@ -611,8 +611,14 @@ figcaption {
 
 .site-masthead {
     box-sizing: border-box;
-    position: relative;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 10000;
     text-align: center;
+    background-color: #91837A;
+    opacity: 80%;
+    
 }
 
 .site-masthead h1 {
@@ -644,6 +650,7 @@ figcaption {
 .site-navigation {
     margin-top: 2rem;
     padding: 0 1rem;
+    text-align: center;
 }
 
 .site-navigation:hover a,
@@ -949,6 +956,19 @@ figcaption {
     margin-bottom:0;
     width: 100%;
     height: 100%;
+}
+
+.blank2 {
+    vertical-align: top;
+    position: relative;
+    text-align: center;
+    /* color: white; */
+    padding-top:0;
+    padding-bottom:0;
+    margin-top:0;
+    margin-bottom:0;
+    width: 100%;
+    height: 56.25%;
 }
 
 .container {

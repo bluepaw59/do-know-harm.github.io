@@ -12,7 +12,8 @@
     </head>
     <body>
 
-        <header class="site-masthead" id="myHeader">
+        
+          <header class="site-masthead" id="myHeader">
             <nav class="site-navigation" role="navigation">
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -21,9 +22,13 @@
                     <li><a href="https://www.youtube.com/watch?v=Db7DpGBq-Hg">Full OST</a></li>
                     <li ><a href="https://store.steampowered.com/">Steam</a></li>
                 </ul>
+                <div id="three">
+                  <center><img src="images/border_dark.png" width="30%"></center>
+                </div>
+                <br/>
             </nav>
         
-
+      
             <!-- <h1> Do Know Harm </h1> -->
             
             
@@ -31,16 +36,15 @@
             
         </header>
 
-
         <div class="container2">
             <div id='filling' style='display:block'>
             </div>
-            <div class="fade-in-image">
+            <!-- <div class="fade-in-image"> -->
                 <div id="cover" style="position:fixed">
-                    <img src="images/streetcar.png" style="position:absolute;top:0;left:0;width:100%;height:100vh;z-index:1.5;" id="bg-cover">
+                    <img src="images/streetcar.png" style="position:absolute;top:0;left:0;width:100%;z-index:1.5;" id="bg-cover">
                 <div id="one">                    
                     <img src="images/bg.png" style="position:absolute;top:0;left:0;width:100%;height:100vh;">                    
-                    <img src="images/both_sketch-01.png" alt="streetcar" style="width:100%;position:absolute;top:0px;left:0px;">
+                    <img src="images/both_sketch-01.png" alt="streetcar" style="width:100%;position:absolute;bottom:0px;left:0px;">
                     <div class="centered2">
                         <video width="30%" autoplay loop muted playsinline>
                             <source 
@@ -57,20 +61,22 @@
                         <h2>a visual novel crossed with combat medicine</h2>
                     </div>    
                 </div>
-                </div>
+                <!-- </div> -->
             </div>
 
         </div>
+        
 
         
         
         <!-- <div class="blank"></div> -->
+
         <div class="container" id="two">         
             <img src="images/streetcar.png" alt="streetcar" style="width:100%;">
-            <div class="centered">did you KNOW that "Do Know Harm" is really a terrible pun on "Do No Harm" :D!</div>           
+            <div class="centered" id="test">did you KNOW that "Do Know Harm" is really a terrible pun on "Do No Harm" :D!</div>           
         </div>
         <div class="colorline"></div>
-        <div class="container" id="two">
+        <div class="container">
             <img src="images/marketplace.png" alt="marketplace" style="width:100%;">
             <div class="centered">man who should we ship eric with? ""the water""</div>
         </div>
@@ -100,6 +106,7 @@
                 <br/>
         </div>
     </body>
+    
 </html>
 
 <script>
@@ -108,6 +115,7 @@ const two = document.getElementById('two')
 const cover = document.getElementById('cover')
 const filling = document.getElementById('filling')
 const bgCover = document.getElementById('bg-cover')
+const header_1 = document.getElementById('three')
 
 window.addEventListener('scroll', () => {
   let scrollY = window.scrollY
@@ -115,6 +123,7 @@ window.addEventListener('scroll', () => {
   
   if(scrollY / bottomHeight <= 1){
     one.style.opacity = 1 - ( scrollY / bottomHeight )
+    header_1.opacity = 0
     bgCover.opacity = 1
     cover.style.position = 'fixed'
     filling.style.display = 'none'
@@ -125,10 +134,11 @@ window.addEventListener('scroll', () => {
     filling.style.display = 'block'
     two.style.display = 'block'
     bgCover.opacity = 1.1- (scrollY/bottomHeight)
+    header_1.opacity = 0.8
   }
 })
 
-window.onscroll = function() {myFunction()};
+// window.onscroll = function() {myFunction()};
 
 var header = document.getElementById("myHeader");
 var sticky = header.offsetTop;
