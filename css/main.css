@@ -607,6 +607,18 @@ figcaption {
     text-align: center;
 }
 
+.site-masthead2 {
+    box-sizing: border-box;
+    position: relative;
+    /* top: 0px; */
+    /* width: 100%; */
+    /* z-index: 10000; */
+    text-align: center;
+    /* background-color: #91837A; */
+    /* opacity: 80%; */
+    
+}
+
 
 
 .site-masthead {
