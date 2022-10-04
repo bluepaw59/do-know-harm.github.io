@@ -140,6 +140,8 @@ const header_1 = document.getElementById('three')
 if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
   coverDisplay.style.display = 'none';
   mobile.style.display = 'block';
+}else{
+  mobile.style.display = 'none';
 }
 
 window.addEventListener('scroll', () => {
