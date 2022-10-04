@@ -37,7 +37,7 @@
         </header>
 
         <div class="container2" id="cover-display">
-            <div id='filling' style='display:block'>
+            <div id='filling' style='display:none'>
             </div>
             <!-- <div class="fade-in-image"> -->
                 <div id="cover" style="position:fixed">
@@ -137,15 +137,16 @@ const filling = document.getElementById('filling')
 const bgCover = document.getElementById('bg-cover')
 const header_1 = document.getElementById('three')
 
+if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+  coverDisplay.style.display = 'none';
+  mobile.style.display = 'block';
+}
+
 window.addEventListener('scroll', () => {
   let scrollY = window.scrollY
   let bottomHeight = window.innerHeight
   
-  if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
-  // true for mobile device
-    coverDisplay.style.display = 'none';
-    mobile.style.display = 'block';
-  }else{
+  if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
     // false for not mobile device
     if(scrollY / bottomHeight <= 1){
     one.style.opacity = 1 - ( scrollY / bottomHeight )
